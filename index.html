@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!--<video autoplay loop muted playsinline id="bg-video">
+      <source src="your-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>--!>
+    <div class="cursor"></div>
+    <!-- Cursor outside main to cover entire page -->
+    <div class="main"></div>
+
+    <script src="js/script.js"></script>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="assets/logo.png" alt="Logo" />
+    <span>Debjyoti Adak</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#overview">About</a></li>
+    <li><a href="#Experience">Experience</a></li>
+    <li><a href="#Technologies">Technologies</a></li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- Hamburger Menu Icon -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>
+          Hi, I'm <span class="highlight" id="animated-name">Debjyoti</span>
+        </h1>
+        <p>I develop fullstack Android & Web applications.</p>
+        <!-- <span class="highlight" style="font-size: 20px; margin-top: 0px;">An AI </span> -->
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator"></div>
+
+      <!-- 3D Computer Setup -->
+      <div class="container">
+        <div class="circle" style="--i: 0"></div>
+        <div class="circle" style="--i: 1"></div>
+        <div class="circle" style="--i: 2"></div>
+        <div class="circle" style="--i: 3"></div>
+        <div class="circle" style="--i: 4"></div>
+        <div class="circle" style="--i: 5"></div>
+        <div class="circle" style="--i: 6"></div>
+        <div class="circle" style="--i: 7"></div>
+        <div class="circle" style="--i: 8"></div>
+        <div class="circle" style="--i: 9"></div>
+        <div class="circle" style="--i: 10"></div>
+        <div class="circle" style="--i: 11"></div>
+        <div class="circle" style="--i: 12"></div>
+        <div class="circle" style="--i: 13"></div>
+        <div class="circle" style="--i: 14"></div>
+        <div class="circle" style="--i: 15"></div>
+        <div class="circle" style="--i: 16"></div>
+        <div class="circle" style="--i: 17"></div>
+        <div class="circle" style="--i: 18"></div>
+        <div class="circle" style="--i: 19"></div>
+        <div class="circle" style="--i: 20"></div>
+      </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="overview">
+      <span class="highlight">INTRODUCTION</span>
+      <h1>Overview</h1>
+      <p>
+        I am Debjyoti Adak, a passionate Software Developer with hands-on
+        experience in building responsive and user-friendly applications using
+        Flutter, Firebase, and Node.js. I am constantly learning and applying
+        new technologies, such as MongoDB, Tailwind CSS, and Next.js. I thrive
+        on challenges that push me to innovate and deliver impactful solutions.
+      </p>
+
+      <!-- Contact Card -->
+      <div class="contact-card">
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="link-text">link</span>
+        </div>
+        <div class="card-content">
+          <p>
+            <span class="command">: LinkedIN</span> Debjyoti Adak
+            <a
+              href="https://www.linkedin.com/in/debjyoti-adak-32117922a"
+              target="_blank"
+            >
+              <img src="assets/linkedin-icon.png" alt="LinkedIn" />
+            </a>
+          </p>
+
+          <p>
+            <span class="command">: GitHub</span>Deb2oo
+            <a href="https://github.com/Deb2oo" target="_blank">
+              <img src="assets/github-icon.png" alt="GitHub" />
+            </a>
+          </p>
+
+          <p>
+            <span class="command">: Email</span>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=debjyotiadak2003@gmail.com"
+              target="_blank"
+            >
+              debjyotiadak2003@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Download CV Button -->
+      <div class="cv-button">
+        <a id="cvButton" href="assets/Debjyoti_Adak_CV.pdf" download>
+          <button>Download CV</button>
+        </a>
+      </div>
+
+      <!-- Developer Roles -->
+      <!-- Developer Roles -->
+      <div class="developer-roles">
+        <div class="role-card">
+          <img src="assets/web-developer.png" alt="Web Developer" />
+          <p>Frontend <span class="highlight">&</span> Backend</p>
+        </div>
+        <div class="role-card">
+          <img src="assets/mern-dev.png" alt="MERN Developer" />
+          <p>MERN Developer</p>
+        </div>
+        <div class="role-card">
+          <img src="assets/aiml.png" alt="AI & ML" />
+          <p>AI <span class="highlight">&</span> ML</p>
+        </div>
+        <div class="role-card">
+          <img src="assets/Android-dev.png" alt="Android Developer" />
+          <p>Android Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+<section id="Experience" class="experience">
+  <span class="highlight">WORK EXPERIENCE</span>
+  <h1>Experience</h1>
+
+  <div class="timeline">
+    <!-- Experience Item 1 -->
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="assets/data-science.png" alt="Data Scientist" />
+      </div>
+      <div class="timeline-content">
+        <h2>Data Science Intern</h2>
+        <h4>Willmark International (in collaboration with Wealth Rovers)</h4>
+        <ul>
+          <li>Successfully completed a Data Science internship, working on real-life problem-solving using mathematical and statistical models.</li>
+          <li>Applied Machine Learning techniques to analyze and derive insights from complex datasets.</li>
+          <li>Developed data visualization dashboards to represent analytical results effectively.</li>
+          <li>Worked on Data Engineering tasks, cleaning, transforming, and preparing data for ML models.</li>
+        </ul>
+        <span class="date">28 Mar, 2023 - 13 May, 2023</span>
+        <br />
+        <a href="https://github.com/Deb2oo" target="_blank" class="project-link">Project Link</a>
+      </div>
+    </div>
+
+    <!-- Experience Item 2 -->
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="assets/web-dev.png" alt="Web Developer" />
+      </div>
+      <div class="timeline-content">
+        <h2>Web Developer Intern</h2>
+        <h4>Codsoft</h4>
+        <ul>
+          <li>Worked in IT / Computers - Software domain.</li>
+          <li>Designed & developed responsive websites using HTML, CSS, and JavaScript.</li>
+          <li>Enhanced problem-solving and collaborative project management skills.</li>
+          <li>Strengthened frontend development expertise.</li>
+        </ul>
+        <span class="date">15 Nov, 2023 - 15 Dec, 2023</span>
+        <br />
+        <a href="https://github.com/Deb2oo" target="_blank" class="project-link">Project Link</a>
+      </div>
+    </div>
+
+    <!-- Experience Item 3 -->
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="assets/yolo-icon.png" alt="YOLO Explorer" />
+      </div>
+      <div class="timeline-content">
+        <h2>YOLO Explorer: Object Detection in Open Environments</h2>
+        <h4>Mentor: Self-Guided | Team Size: 1</h4>
+        <ul>
+          <li>Developed a real-time object detection system using the YOLOv8 model.</li>
+          <li>Built a MERN-stack-based web app where users can upload images/videos for object analysis.</li>
+          <li>Integrated Flask backend with PyTorch and OpenCV for deep learning inference.</li>
+          <li>Stored detection logs in MongoDB for future evaluation.</li>
+          <li>Worked on model training, backend API development, and full-stack integration.</li>
+          <li>Use cases include surveillance, automation, and intelligent monitoring.</li>
+        </ul>
+        <span class="date">01 Jan, 2025 - 10 Feb, 2025</span>
+        <br />
+        <a href="https://github.com/Deb2oo/YOLO-Explorer" target="_blank" class="project-link">Project Link</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Skills & Technologies Section -->
+    <section id="Technologies" class="skills">
+      <span class="highlight">MY SKILLS &</span>
+      <h1>Technologies</h1>
+
+      <div class="skills-grid">
+        <div class="skill-item">
+          <img src="assets/html.png" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/javascript.png" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/ai.png" alt="TypeScript" />
+          <p>Machine Learning</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/react.png" alt="React" />
+          <p>React</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/cloud.png" alt="Flutter" />
+          <p>Cloud & DevOps</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/ui.png" alt="Next.js" />
+          <p>UI/UX</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/tailwind.png" alt="Tailwind CSS" />
+          <p>Tailwind CSS</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/node.png" alt="Node.js" />
+          <p>Node.js</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/ex.png" alt="Express.js" />
+          <p>Express.js</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/mongodb.png" alt="MongoDB" />
+          <p>MongoDB</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/java.png" alt="Java" />
+          <p>Java</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/git.png" alt="Git" />
+          <p>Git</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/python.png" alt="Python" />
+          <p>Python</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="project" class="projects">
+      <span class="highlight">MY WORK</span>
+      <h1>Projects</h1>
+      <p>
+        Following projects showcase my skills and experience through real-world
+        examples of my work. Each project is briefly described with links to
+        code repositories and live demos in it. It reflects my ability to solve
+        complex problems, work with different technologies, and manage projects
+        effectively.
+      </p>
+
+      <div class="projects-grid">
+        <!-- Project 1: YOLO Explorer -->
+        <div class="project-card">
+          <div class="image-container">
+            <div class="image-inner">
+              <img
+                src="assets/project1.png"
+                alt="YOLO Explorer Project"
+                class="front"
+              />
+              <img
+                src="assets/project1-alt.png"
+                alt="YOLO Explorer Alternative"
+                class="back"
+              />
+            </div>
+          </div>
+          <h2>YOLO Explorer: Object Detection in Open Environments</h2>
+          <p>
+            YOLO Explorer is a real-time object detection system that tracks
+            objects in dynamic environments using the YOLOv8 model. The
+            MERN-stack-based web application allows users to upload
+            images/videos for object detection analysis.
+          </p>
+          <div class="tech-stack">
+            <span>#MachineLearning</span>
+            <span>#DeepLearning</span>
+            <span>#YOLOv8</span>
+            <span>#OpenCV</span>
+            <span>#React.js</span>
+            <span>#MERN</span>
+            <span>#Python</span>
+            <span>#Flask</span>
+            <span>#MongoDB</span>
+          </div>
+          <div class="project-details">
+            <p><strong>Mentor:</strong> Self-Guided</p>
+            <p><strong>Team Size:</strong> 1</p>
+            <p><strong>Duration:</strong> 01 Jan, 2025 - 10 Feb, 2025</p>
+            <p>
+              <strong>Project Link:</strong>
+              <a href="https://github.com/Deb2oo/YOLO-Explorer" target="_blank">
+                GitHub Repository
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 2: AI-Powered Medical Assistant -->
+        <div class="project-card">
+          <div class="image-container">
+            <div class="image-inner">
+              <img
+                src="assets/project2.png"
+                alt="AI Medical Assistant"
+                class="front"
+              />
+              <img
+                src="assets/project2-alt.png"
+                alt="AI Medical Assistant Alt"
+                class="back"
+              />
+            </div>
+          </div>
+          <h2>AI-Powered Medical Assistant</h2>
+          <p>
+            An <strong>AI-powered virtual doctor</strong> designed to assist
+            with <strong>medical diagnostics</strong> and provide health
+            recommendations. Features include <strong>symptom checker</strong>,
+            <strong>medical history analysis</strong>, and
+            <strong>real-time health advice</strong> using AI models.
+          </p>
+          <div class="tech-stack">
+            <span>#AI</span>
+            <span>#ML</span>
+            <span>#Python</span>
+            <span>#TensorFlow</span>
+            <span>#Healthcare</span>
+            <span>#IoT</span>
+            <span>#HaldiaInstituteOfTechnology</span>
+          </div>
+          <div class="project-details">
+            <p><strong>Mentor:</strong> Self-Guided</p>
+            <p><strong>Team Size:</strong> 4</p>
+            <p><strong>Duration:</strong> 31 Mar, 2025 - 30 Jun, 2025</p>
+            <p>
+              <strong>Project Link:</strong>
+              <a
+                href="https://github.com/Deb2oo/Ai_medical_assistance_v1"
+                target="_blank"
+              >
+                GitHub Repository
+              </a>
+            </p>
+          </div>
+        </div>
+
+       
+    </section>
+
+   <!-- 
+<section class="testimonials">
+  <span class="highlight">Testimonials</span>
+  <h3>WHAT OTHERS SAY</h3>
+
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      
+     
+      <div class="swiper-slide testimonial-card featured" data-aos="fade-up">
+        <span class="badge">🏆 Featured</span>
+        <span class="quote">"</span>
+        <p>
+          Debjyoti's expertise in AI and web development is truly remarkable. His ability to build and optimize systems has significantly improved our workflow.
+        </p>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <div class="author">
+          <img src="assets/client1.jpg" alt="Arghya Gayen" />
+          <div>
+            <h4>@ Arghya Gayen</h4>
+            <p>Teammate - AI Medical Assistant Project</p>
+            <a href="https://www.linkedin.com/in/arghya-gayen" target="_blank">
+              <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide testimonial-card" data-aos="fade-up">
+        <span class="quote">"</span>
+        <p>
+          Debjyoti's knowledge of AI/ML and IoT helped shape our Lie Detector prototype. His dedication and technical skills are invaluable.
+        </p>
+        <video controls>
+          <source src="assets/testimonial2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <div class="author">
+          <img src="assets/client2.jpg" alt="Arnab Pahari" />
+          <div>
+            <h4>@ Arnab Pahari</h4>
+            <p>Teammate - AI-Powered Lie Detector Project</p>
+            <a href="https://www.linkedin.com/in/arnab-pahari" target="_blank">
+              <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide testimonial-card" data-aos="fade-up">
+        <span class="quote">"</span>
+        <p>
+          Debjyoti's ability to solve complex problems with AI and automation is impressive. His contributions to our projects have been outstanding.
+        </p>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <div class="author">
+          <img src="assets/client3.jpg" alt="Arundhoti Chatterjee" />
+          <div>
+            <h4>@ Arundhoti Chatterjee</h4>
+            <p>Teammate - AI Medical Assistant & Lie Detector Project</p>
+            <a href="https://www.linkedin.com/in/arundhoti-chatterjee" target="_blank">
+              <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+-->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <span class="highlight">GET IN TOUCH</span>
+      <h1>CONTACT</h1>
+
+      <form action="#" method="POST" class="contact-form">
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="What's your name?"
+          required
+        />
+
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="What's your Email?"
+          required
+        />
+
+        <label for="message">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="What you want to say?"
+          required
+        ></textarea>
+
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>DEBJYOTI ADAK</h2>
+      <p>AI Developer | Web Enthusiast | Tech Innovator</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#Experience">Experience</a>
+      <a href="#project">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://github.com/Deb2oo" target="_blank">
+        <img src="assets/github-icon.png" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/debjyoti-adak-32117922a/" target="_blank">
+        <img src="assets/linkedin-icon.png" alt="LinkedIn" />
+      </a>
+      <a href="https://www.threads.net/@adak.debjyoti" target="_blank" >
+        <img src="assets/twitter-icon.png" alt="Twitter" />
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 debjyotiadak. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  </body>
+</html>
