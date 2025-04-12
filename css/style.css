@@ -137,12 +137,12 @@ body {
   }
 
   /* Hamburger Menu Styling */
-  .hamburger {
+.hamburger {
     display: flex;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    padding: 10px;
+    padding: 25px;
   }
 
   .hamburger span {
@@ -152,7 +152,6 @@ body {
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
-  /* Hamburger Animation When Menu is Active */
   .hamburger.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
